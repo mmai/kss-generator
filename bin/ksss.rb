@@ -38,9 +38,9 @@ else
     @output = ERB.new(@template, nil, nil, '@output').result();
 end
 
-FileUtils.cp(@templatedir+'/kss.js', @cssdir);
-FileUtils.cp(@templatedir+'/styleguide.css', @cssdir);
+#FileUtils.cp(@templatedir+'/kss.js', @cssdir);
+#FileUtils.cp(@templatedir+'/styleguide.css', @cssdir);
 
-File.open(@cssdir+'/cssdocs.html', 'w+') {
+File.open(@templatedir+'/cssdocs.html', 'w+') {
     |f| f.write(@output)
 }

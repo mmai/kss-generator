@@ -5,6 +5,10 @@ An adapatation of https://github.com/tmanderson/kss-standalone
 
 Usage : 
 
-  > kss.rb relative/path/to/css relative/path/to/templates
+* Copy the templates directory in your project path
+* Modify styleguide.html
+* Execute :
 
-It will copy kss.js and styleguide.css to relative/path/to/css and generate cssdocs.html in the same folder.
+  > ksss.rb relative/path/to/css relative/path/to/templates
+
+It will generate cssdocs.html in relative/path/to/templates.
